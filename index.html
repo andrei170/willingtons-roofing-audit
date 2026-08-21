@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Willingtons Roofing &amp; Building — Online Presence Audit</title>
+<style>
+:root{--ink:#11161c;--body:#3b4550;--muted:#6c7783;--faint:#98a2ad;--paper:#fff;--ground:#f4f6f8;--panel:#eceff3;
+--rule:#dde2e8;--rule-2:#c2cad4;--slate:#1c3a2e;--f:#b3261e;--f-soft:#fbeae9;--d:#b0670a;--d-soft:#fdf1e0;
+--c:#8a7407;--c-soft:#fbf5dd;--a:#1a6444;--a-soft:#e3f0ea;--shadow:0 1px 2px rgba(17,22,28,.05),0 10px 28px -18px rgba(17,22,28,.3);}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding:0 24px 84px}h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600}p{margin:0 0 14px}
+.mast{padding:50px 0 0}.eyebrow{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:700}
+h1{font-size:clamp(31px,5.2vw,48px);line-height:1.07;margin:13px 0 0;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:17px;margin:14px 0 0;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:19px;font-size:12.5px;color:var(--faint)}.meta b{color:var(--body);font-weight:600}
+.grade{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:26px 28px;margin:28px 0 0;box-shadow:var(--shadow)}
+@media(max-width:600px){.grade{grid-template-columns:1fr;gap:16px}}
+.badge{width:116px;height:116px;border-radius:6px;background:var(--c-soft);border:2px solid var(--c);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--c)}
+.badge .g{font-family:Georgia,serif;font-size:52px;line-height:1;font-weight:700}.badge .s{font-size:12px;letter-spacing:.06em;margin-top:5px;font-weight:700}
+.grade h2{margin:0 0 8px;font-size:22px}.grade p{margin:0;color:var(--body);font-size:15px}
+.finds{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;margin:22px 0 0;overflow:hidden}
+.find{background:var(--paper);padding:18px}.find .n{font-family:Georgia,serif;font-size:29px;line-height:1.1;color:var(--f);font-weight:700}
+.find .n.ok{color:var(--a)}.find .l{font-size:13px;color:var(--body);margin-top:8px;line-height:1.45}
+section{margin-top:50px}.sec-h{border-top:2px solid var(--ink);padding-top:12px;margin-bottom:6px}h2.sec{font-size:clamp(21px,3vw,27px);margin:0}
+.lede{color:var(--muted);font-size:16px;margin:8px 0 20px;max-width:66ch}
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--paper);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:650px;font-size:14.5px}
+th{background:var(--panel);text-align:left;padding:11px 14px;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700;border-bottom:1px solid var(--rule-2)}
+td{padding:13px 14px;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.5}tbody tr:last-child td{border-bottom:none}
+td.cat{font-weight:600;width:22%}td.sc{width:70px;white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:3px}
+.p-f{background:var(--f-soft);color:var(--f)}.p-d{background:var(--d-soft);color:var(--d)}.p-c{background:var(--c-soft);color:var(--c)}.p-a{background:var(--a-soft);color:var(--a)}
+.call{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--f);border-radius:0 6px 6px 0;padding:20px 22px;margin:22px 0;box-shadow:var(--shadow)}
+.call.good{border-left-color:var(--a)}.call.slate{border-left-color:var(--slate)}
+.call-l{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--f);display:block;margin-bottom:8px}
+.call.good .call-l{color:var(--a)}.call.slate .call-l{color:var(--slate)}.call p:last-child{margin-bottom:0}
+code{background:var(--panel);padding:1.5px 6px;border-radius:3px;font-size:13px;font-family:ui-monospace,Consolas,monospace;color:var(--slate)}
+ul{margin:0 0 16px;padding-left:22px}li{margin-bottom:9px}strong{font-weight:650}
+.pri{counter-reset:p;margin:20px 0 0;padding:0;list-style:none}
+.pri li{counter-increment:p;position:relative;padding:16px 18px 16px 58px;background:var(--paper);border:1px solid var(--rule);border-radius:6px;margin-bottom:10px;box-shadow:var(--shadow)}
+.pri li::before{content:counter(p);position:absolute;left:17px;top:16px;width:26px;height:26px;background:var(--slate);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:-apple-system,sans-serif}
+.pri h4{margin:0 0 5px;font-size:16px;font-family:Georgia,serif}.pri p{margin:0;font-size:14px;color:var(--body)}
+footer{margin-top:58px;padding-top:20px;border-top:2px solid var(--ink);font-size:12.5px;color:var(--faint);line-height:1.75}
+</style></head><body><div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">Online Presence Audit &middot; Prepared 21 August 2026</div>
+  <h1>Willingtons Roofing &amp; Building Ltd</h1>
+  <p class="sub">You do not have a lead problem. You doubled turnover last year. This is a review of
+  why the leads you get are the wrong size, and where the ten thousand pound roofs are going instead.</p>
+  <div class="meta"><span><b>Prepared for</b> Mark Harrington</span><span><b>Company</b> 10775678</span>
+  <span><b>Reviewed</b> willingtons.co.uk</span><span><b>By</b> AG1 Consulting</span></div>
+</header>
+
+<div class="grade">
+  <div class="badge"><div class="g">C</div><div class="s">54 / 100</div></div>
+  <div>
+    <h2>The best-built site we have audited this month. Aimed at the wrong job.</h2>
+    <p>Two phone numbers, both tappable. A five-field enquiry form. Google Tag Manager installed.
+    FMB and Checkatrade. VAT registered, company number on the site. You are ahead of almost every
+    roofer we look at. <strong>And every one of those things is pointed at gutter cleaning and fascia
+    work rather than the full roofs you actually want.</strong></p>
+  </div>
+</div>
+
+<div class="finds">
+  <div class="find"><div class="n">6</div><div class="l">Services on your homepage. Four of them are maintenance and cleaning jobs worth a few hundred pounds</div></div>
+  <div class="find"><div class="n">0</div><div class="l">Customer reviews displayed anywhere on your own website, despite holding good ones elsewhere</div></div>
+  <div class="find"><div class="n">0</div><div class="l">Full roof replacements presented as a case study, with the before and after photos you already own</div></div>
+  <div class="find"><div class="n ok">15+</div><div class="l">Marketing firms you have already tried. This audit assumes you have heard every pitch</div></div>
+</div>
+
+<section>
+  <div class="sec-h"><h2 class="sec">Start here: the market has you filed as a cleaner</h2></div>
+
+  <div class="call">
+    <span class="call-l">Your Checkatrade listing</span>
+    <p>Your Checkatrade profile surfaces under <strong>Cleaning Services</strong>, not Roofing. The
+    page title reads "Willingtons Roofing &amp; Building Ltd | Cleaning Services | Leatherhead,
+    Guildford &amp; Woking".</p>
+    <p>Checkatrade is a directory homeowners use to shortlist by trade. A homeowner in Cobham who
+    needs a full re-roof filters by roofer. <strong>If your primary category is cleaning, you are not
+    in that list.</strong> Worth logging in and checking your categories before anything else on this
+    document, because it is free and it takes ten minutes.</p>
+  </div>
+
+  <p>The same pattern runs through your own site. Your six services are <strong>Roofing, Chimneys,
+  Roof Cleaning, Fascia Soffit &amp; Cladding, Flat Roofs, and Guttering &amp; Gutter Cleaning.</strong>
+  Roof cleaning and gutter cleaning sit at equal weight with roofing. Your enquiry form has a category
+  dropdown, which means visitors are being invited to self-select into the cheap work.</p>
+
+  <p>You told us you want full roofs at around ten thousand pounds, and commercial. <strong>Neither has
+  a page.</strong> There is no "full roof replacement" service, no "new roof" page, and no commercial
+  page, even though you do commercial work.</p>
+
+  <div class="call slate">
+    <span class="call-l">Why this matters more for you than for most</span>
+    <p>You doubled turnover last year, so the top of your funnel works. When a business with a working
+    funnel wants bigger jobs, adding more leads makes the problem worse, not better &mdash; it adds
+    more of what you already have too much of. <strong>The lever is not volume. It is what the site
+    invites people to ask for.</strong></p>
+    <p>That is also why fifteen marketing firms have not fixed it. Most of them sell volume.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-h"><h2 class="sec">The scorecard</h2></div>
+  <p class="lede">Twelve categories out of ten. You score well on mechanics and badly on positioning.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Category</th><th>Score</th><th>Grade</th><th>What we found</th></tr></thead><tbody>
+    <tr><td class="cat">Contact accessibility</td><td class="sc">9/10</td><td><span class="pill p-a">A</span></td>
+    <td><strong>Excellent.</strong> Mobile 07786 441 183 and landline 01932 346 591, both as working tap-to-call links. A landline signals an established business. Most roofers we audit have neither.</td></tr>
+
+    <tr><td class="cat">Enquiry capture</td><td class="sc">7/10</td><td><span class="pill p-c">B&minus;</span></td>
+    <td>Five fields: name, email, phone, category, message. Genuinely good. Marked down because the category dropdown routes people toward the cheap services, and there is no field for property type, roof type, or budget.</td></tr>
+
+    <tr><td class="cat">Job-size positioning</td><td class="sc">2/10</td><td><span class="pill p-f">F</span></td>
+    <td><strong>The core problem.</strong> Four of six headline services are low-value maintenance. No full re-roof page, no commercial page, no indication anywhere that you take on ten thousand pound projects.</td></tr>
+
+    <tr><td class="cat">Directory categorisation</td><td class="sc">2/10</td><td><span class="pill p-f">F</span></td>
+    <td>Checkatrade profile surfacing under Cleaning Services rather than Roofing. This is free to fix and it decides which shortlists you appear on.</td></tr>
+
+    <tr><td class="cat">Proof on your own site</td><td class="sc">1/10</td><td><span class="pill p-f">F</span></td>
+    <td>No testimonials, no review count, no star rating anywhere on willingtons.co.uk. You hold 4.9 from 11 reviews on one aggregator, a Checkatrade profile and a Which? Trusted Trader listing, and a visitor to your site sees none of it.</td></tr>
+
+    <tr><td class="cat">Case studies</td><td class="sc">2/10</td><td><span class="pill p-f">F</span></td>
+    <td><strong>You already own before, during and after photographs of full roof replacements.</strong> They sit on inner service pages as decoration, unlabelled, with no scope, timescale or outcome attached. This is the single biggest wasted asset on the site.</td></tr>
+
+    <tr><td class="cat">Photography</td><td class="sc">8/10</td><td><span class="pill p-a">B</span></td>
+    <td>Real job photography including proper before and after sets, leadwork and pointing detail. Checkatrade reviewers specifically praise your use of before and after photos. Your website barely uses them.</td></tr>
+
+    <tr><td class="cat">Accreditation display</td><td class="sc">6/10</td><td><span class="pill p-c">C</span></td>
+    <td>Federation of Master Builders and Checkatrade both shown. Which? Trusted Trader is not. No insurance figure, no workmanship guarantee stated anywhere, which matters more at ten thousand pounds than at three hundred.</td></tr>
+
+    <tr><td class="cat">Commercial offering</td><td class="sc">2/10</td><td><span class="pill p-f">F</span></td>
+    <td>Commercial work is mentioned in passing and given no page, no examples and no separate enquiry route. A facilities manager has nothing to read and nothing to send upward.</td></tr>
+
+    <tr><td class="cat">Local search footprint</td><td class="sc">6/10</td><td><span class="pill p-c">C</span></td>
+    <td>Woking, Guildford, Weybridge, Cobham and Esher named on the homepage, which is more than most. No individual area pages, so you are relying on one page to rank across an entire county.</td></tr>
+
+    <tr><td class="cat">Measurement</td><td class="sc">5/10</td><td><span class="pill p-c">C</span></td>
+    <td>Google Tag Manager is installed (<code>GTM-KGM4BCTJ</code>), which puts you ahead of most. We could not confirm conversion tracking on form submissions or calls, so you can likely see traffic but not which enquiries came from where, or what each one costs.</td></tr>
+
+    <tr><td class="cat">Paid-channel readiness</td><td class="sc">4/10</td><td><span class="pill p-d">D</span></td>
+    <td>No Meta pixel present, so any Facebook or Instagram advertising has no audience-building or measurement behind it. With fifteen agencies through the door, this is worth knowing before the sixteenth quotes you.</td></tr>
+  </tbody></table></div>
+</section>
+
+<section>
+  <div class="sec-h"><h2 class="sec">What fifteen firms have not told you</h2></div>
+
+  <div class="call good">
+    <span class="call-l">The honest version</span>
+    <p><strong>You probably do not need more leads.</strong> A business that doubled turnover in a
+    year has a working front end. If the sixteenth agency sells you volume, you will get more gutter
+    cleaning enquiries and be busier for less money.</p>
+    <p>The three things that would actually change your average job value cost almost nothing:
+    <strong>fix the Checkatrade category, put your reviews on your own site, and turn two of your
+    existing before-and-after sets into full roof case studies with the price band on them.</strong>
+    None of that is a retainer. It is a Tuesday.</p>
+    <p>Advertising is worth having <em>after</em> that, because then the money is buying enquiries for
+    ten thousand pound roofs rather than three hundred pound gutters. Doing it in the other order is
+    how the last fifteen went.</p>
+  </div>
+
+  <p>Checkatrade reviewers describe you as premium priced. That is not a weakness for the work you
+  want &mdash; it is the positioning. But a premium price needs premium proof on the page where the
+  decision happens, and right now your website makes no argument for it at all.</p>
+</section>
+
+<section>
+  <div class="sec-h"><h2 class="sec">Priority order</h2></div>
+  <p class="lede">Ranked by effect on average job value.</p>
+  <ol class="pri">
+    <li><h4>Fix the Checkatrade category</h4><p>Free, ten minutes, and it decides whether you appear when a Surrey homeowner filters for a roofer. Nothing else on this list beats it for effort against return.</p></li>
+    <li><h4>Build the full roof replacement page</h4><p>The job you want needs a page of its own, with the process, the timescale, the guarantee and an honest price band. At present a homeowner planning a re-roof has nothing to read.</p></li>
+    <li><h4>Turn your before-and-afters into case studies</h4><p>You already have the photographs. Add the property type, the scope, how long it took and roughly what it cost. Two of these will do more for job size than any advertising campaign.</p></li>
+    <li><h4>Put your proof on your own website</h4><p>Rating, review count, FMB, Checkatrade, Which? Trusted Trader, insurance and guarantee, above the point where someone decides to make contact.</p></li>
+    <li><h4>Give commercial its own page and route</h4><p>Different buyer, different language, different enquiry form. Currently invisible.</p></li>
+    <li><h4>Confirm conversion tracking before spending on ads</h4><p>GTM is there. Make sure form submissions and calls are firing as conversions, so the sixteenth agency can be measured in a way the first fifteen were not.</p></li>
+  </ol>
+</section>
+
+<footer>
+  Prepared by AG1 Consulting, 21 August 2026, for Mark Harrington of Willingtons Roofing &amp; Building
+  Ltd (company 10775678, VAT 236986852).<br>
+  Findings taken from willingtons.co.uk and its page source on that date, and from publicly listed
+  directory profiles. Review counts are as published by third-party platforms and have not been
+  independently verified. The Checkatrade categorisation is as it surfaces publicly and should be
+  confirmed inside your own Checkatrade account.
+</footer>
+</div></body></html>
